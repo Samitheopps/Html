@@ -3,15 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fast Chicken</title>
     <link rel="stylesheet" href="css\style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <H1>Fast House</H1>
 
-    <div >
-        <img src="img\poulet_frit.jpg" alt="chikenfried"class="poulet">
-    </div>  
+<header>
+    <nav>
+        <li><a href="http://127.0.0.1:5500/index.html#une">À la une</a></li>
+        <li><a href="http://127.0.0.1:5500/index.html#veggie">Veggie</a></li>
+        <li><a href="http://127.0.0.1:5500/index.html#boissons">Boissons</a></li>
+        <li><a href="http://127.0.0.1:5500/index.html#petit">Petite Faim</a></li>
     
+        <img src="img\Red Yellow Flat Illustrative Simple Fried Chicken Logo.png" alt="logo" width="250">
+        <li><a href="http://127.0.0.1:5500/index.html">Acceuil</a></li>
+        <li><a href="https://www.google.com/maps/place/Fast+Chicken/@48.6031677,7.5963454,17z/data=!3m1!4b1!4m6!3m5!1s0x4796b187af1c897f:0x877f775603bda4b1!8m2!3d48.6031677!4d7.5963454!16s%2Fg%2F11stxd0bjx?hl=fr&entry=ttu">Localisation</a></li>
+        <li><a href="https://www.ubereats.com/">Click and collect</a></li>
+    </nav>
+</header>
+
+<main>
+    <div class="box">
+        <div class="section">
+            <h1>À LA UNE</h1>
+            <div class="article-box" id="une">
+                <a href="http://127.0.0.1:5500/wings.html" class="wings">
+                    <img src="img\poulet_frit.jpg" alt="poulet_frit">
+                    <p>Chicken Fried</p>
+                    <p>15€ (10€ sans menu)</p>
+                </a>
+            </div>
+            <div class="article-box">
+                <a href="http://127.0.0.1:5500/burger.html" class="burger">
+                    <img src="img\burger-poulet.jpg" alt="burger poulet">
+                    <p>Burger Fast Chicken</p>
+                    <p>14€ (10€ sans menu)</p>
+                </a>
+            </div>
+            <div class="article-box">
+                <a href="http://127.0.0.1:5500/assiette.html" class="assiette">
+                    <img src="img\poulet-roti-frites.jpeg" alt="assiette poulet">
+                    <p>Assiette Fast Chicken</p>
+                    <p>20€ (15€ sans menu)</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="section">
+            <h1>Menu Végétarien</h1>
+            <div class="article-box">
+                <a href="http://127.0.0.1:5500/veggie_wings.html" class="veggie wings" id="veggie">
+                    <img src="img\wings veggie.jpg" alt="veggie wings">
+                    <p>Wings Veggie</p>
+                    <p>15.01€ (10.01€ sans menu)</p>
+                </a>
+            </div>
+            <div class="article-box">
+                <a href="http://127.0.0.1:5500/veggie_burger.html" class="burger veggie">
+                    <img src="img\burger veggie.jpg" alt="burger veggie">
+                    <p>Burger veggie</p>
+                    <p>14.01€ (10.01€ sans menu)</p>
+                </a>
+            </div>
+            <div class="article-box">
+                <a href="http://127.0.0.1:5500/veggie_assiette.html" class="assiette veggie">
+                    <img src="img\assiette veggie.png" alt="assiette veggie">
+                    <p>Assiette Veggie</p>
+                    <p>25€ (20€ sans le menu)</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="section">
+            <h1>NOS BOISSONS</h1>
+            <div class="article-box"id="boissons">
+                <a href="http://127.0.0.1:5500/coca.html" class="coca">
+                    <img src="img\coca.png" alt="coca">
+                    <p>Coca'Cola</p>
+                    <p>1.50€</p>
+                </a>
+            </div>
+            <div class="article-box">
+                <a href="http://127.0.0.1:5500/icetea.html" class="icetea">
+                    <img src="img\ice-tea.png" alt="icetea">
+                    <p>Ice Tea</p>
+                    <p>1.50€</p>
+                </a>
+            </div>
+            <div class="article-box">
+                <a href="http://127.0.0.1:5500/oasis.html" class="oasis">
+                    <img src="img\oasis.png" alt="oasis">
+                    <p>Oasis Tropicale</p>
+                    <p>1.50€</p>
+                </a>
+            </div>
+            <div class="article-box">
+                <a href="http://127.0.0.1:5500/evian.html" class="evian">
+                    <img src="img\eau.jpg" alt="eau">
+                    <p>Boutielle d'eau Evian</p>
+                    <p>1.50€</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="section">
+            <h1>PETITE FAIM</h1>
+            <div class="article-box" id="petit">
+                <a href="http://127.0.0.1:5500/frite.html" class="frite">
+                    <img src="img\frite.jpg" alt="frite">
+                    <p>French Fries Chicken</p>
+                    <p>4.50€</p>
+                </a>
+            </div>
+            <div class="article-box">
+                <a href="http://127.0.0.1:5500/nuggets.html" class="nuggets">
+                    <img src="img\nuggets.png" alt="nugggets">
+                    <p>6 pièces de Nuggets</p>
+                    <p>8.50€ (5€ sans menu) </p>
+                </a>
+            </div>
+            <div class="article-box">
+                <a href="http://127.0.0.1:5500/miniburger.html" class="mini_burger">
+                    <img src="img\mini chiken burger.jpg" alt="burger mini">
+                    <p>Mini Fast Chicken Burger</p>
+                    <p>5.50€ (4€ sans le menu)</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Adresse</h3>
+            <p>16 Rte de Paris, 67117 Ittenheim</p>
+        </div>
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p>Email: info@fastchicken.com</p>
+            <p>Téléphone: 06 234 567 890</p>
+        </div>
+        <div class="footer-section">
+            <h3>Horaires</h3>
+            <p>Lundi - Dimanche: 10h00 - 22h00</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Fast Chicken. Tous droits réservés.</p>
+    </div>
+</footer>
+
 </body>
 </html>
+

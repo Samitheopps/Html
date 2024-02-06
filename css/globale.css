@@ -2,6 +2,15 @@
 body {
   font-family: 'Lexend', cursive;  /* Utilise la police 'Lexend' pour le texte */
   background-color: #ff6624;  /* Couleur de fond orange */
+  margin: 0;  /* Supprime la marge par défaut du corps */
+  display: flex;  /* Utilise le modèle de boîte flexible */
+  flex-direction: column;  /* Les éléments enfants sont alignés en colonne */
+  min-height: 100vh;  /* Hauteur minimale de la vue du navigateur */
+}
+
+.container {
+  width: 80%;  /* Largeur de la boîte de contenu à 80% de la largeur parente */
+  margin: auto;  /* Centre la boîte de contenu horizontalement */
 }
 
 /* Styles de l'en-tête */
@@ -36,20 +45,21 @@ nav a:hover {
 
 nav img {
   max-width: 100%;  /* Largeur maximale de l'image à 100% */
-  height:auto;  /* Hauteur automatique pour maintenir les proportions */
+  height: auto;  /* Hauteur automatique pour maintenir les proportions */
   border-radius: 100px;  /* Bordure arrondie pour les images */
 }
 
 /* Styles du contenu principal */
 main {
-  display:flex;  /* Utilise le modèle de boîte flexible pour le contenu principal */
-  flex-direction: column;  /* Les éléments enfants sont alignés en colonne */
+  display: flex;  /* Utilise le modèle de boîte flexible pour le contenu principal */
+  justify-content: center;  /* Centre les éléments enfants horizontalement */
+  align-items: center;  /* Centre les éléments enfants verticalement */
+  height: 100vh;   /* Hauteur de la vue du navigateur pour le contenu principal */
 }
 
-/* Styles de la boîte principale */
+/* Styles de la boîte */
 .box {
   background-color: #b33600;  /* Couleur de fond brun clair */
-  height: 100%;  /* Ajuste la hauteur à 100% de la hauteur parente */
   display: flex;  /* Utilise le modèle de boîte flexible pour la boîte */
   justify-content: center;  /* Centre les éléments enfants horizontalement */
   align-items: center;  /* Centre les éléments enfants verticalement */
@@ -57,18 +67,10 @@ main {
   color: #fff;  /* Couleur du texte blanc */
   margin: 20px;  /* Marge extérieure de 20 pixels */
   border-radius: 10px;  /* Bordure arrondie */
+  width: 80%;   /* Largeur de la boîte à 80% de la largeur parente */
 }
 
-/* Styles de la section dans les boîtes */
-.section {
-  display: flex;  /* Utilise le modèle de boîte flexible pour la section */
-  flex-direction: row;  /* Les éléments enfants sont alignés en ligne */
-  align-items: center;  /* Centre les éléments enfants verticalement */
-  padding: 20px;  /* Espace intérieur de 20 pixels */
-  text-align: center;  /* Centre le texte horizontalement */
-}
-
-/* Styles des images */
+/* Styles d'image */
 img {
   max-width: 100%;  /* Largeur maximale de l'image à 100% */
   height: 150px;  /* Hauteur fixe de l'image à 150 pixels */
@@ -77,27 +79,41 @@ img {
   object-fit: cover;  /* Ajuste l'image tout en conservant les proportions */
 }
 
-/* Styles des boîtes spécifiques */
+/* Styles spécifiques de la boîte */
 .article-box {
   background-color: #fff;  /* Couleur de fond blanc */
   margin-bottom: 20px;  /* Marge inférieure de 20 pixels */
   padding: 20px;  /* Espace intérieur de 20 pixels */
   border-radius: 8px;  /* Bordure arrondie */
-  display: flex;  /* Utilise le modèle de boîte flexible pour la boîte */
-  flex-direction: row;  /* Les éléments enfants sont alignés en ligne */
   text-decoration: none;  /* Supprime la décoration de lien par défaut */
-  align-items: center;  /* Centre les éléments enfants verticalement */
-  justify-content: space-between;  /* Espace équitable entre les éléments enfants */
   color: black;  /* Couleur du texte noir */
+  text-align: center;  /* Centre le texte horizontalement */
 }
 
-.article-box a {
-  text-decoration: none;  /* Supprime la décoration de lien pour les liens internes à .article-box */
-  color: inherit;  /* Utilise la couleur du texte du parent (.article-box) */
+.large-image {
+  width: 100%;  /* Largeur de l'image à 100% de la largeur parente */
+  max-width: 250px;  /* Largeur maximale de l'image à 250 pixels */
+  height: auto;  /* Hauteur automatique pour maintenir les proportions */
+  border-radius: 5px;  /* Bordure arrondie de l'image */
+  object-fit: cover;  /* Ajuste l'image tout en conservant les proportions */
 }
 
-.article-box a:hover {
-  color: #933600;  /* Changement de couleur au survol */
+#commanderButton {
+  background-color: #fb0000;  /* Couleur de fond rouge foncé */
+  color: #fff;  /* Couleur du texte blanc */
+  padding: 10px 20px;  /* Espacement intérieur de 10 pixels en haut/bas, 20 pixels à gauche/droite */
+  font-size: 16px;  /* Taille de police de 16 pixels */
+  border: none;  /* Supprime la bordure par défaut du bouton */
+  border-radius: 5px;  /* Bordure arrondie */
+  cursor: pointer;  /* Curseur de pointeur au survol du bouton */
+  transition: background-color 0.3s ease;  /* Effet de transition pour la couleur de fond */
+  align-items: center;  /* Centre les éléments verticalement */
+  width: 975px;  /* Largeur fixe du bouton à 975 pixels */
+  height: auto;  /* Hauteur automatique pour maintenir les proportions */
+}
+
+#commanderButton:hover {
+  background-color: #ffbf00;  /* Changement de couleur de fond au survol */
 }
 
 /* Styles du pied de page */
@@ -126,19 +142,7 @@ footer {
   margin-top: 20px;  /* Marge supérieure de 20 pixels */
 }
 
-/* Styles spécifiques de la boîte dans le pied de page */
-.article-box {
-  flex-direction: row;  /* Les éléments enfants sont alignés en ligne */
+.article-description {
+  margin-top: 10px;  /* Marge supérieure de 10 pixels */
+  font-size: 16px;  /* Taille de police de 16 pixels */
 }
-
-.article-box {
-  float: left;  /* Flotte à gauche pour créer une disposition en grille */
-  width: 33.33%;  /* Largeur de chaque boîte à 33.33% de la largeur parente */
-  margin-right: 20px;  /* Marge à droite pour les boîtes */
-  margin-bottom: 20px;  /* Marge en bas pour les boîtes */
-}
-
-.article-box:last-child {
-  margin-right: 0;  /* Supprime la marge à droite de la dernière boîte */
-}
-
