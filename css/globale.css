@@ -5,7 +5,7 @@ body {
   margin: 0;  /* Supprime la marge par défaut du corps */
   display: flex;  /* Utilise le modèle de boîte flexible */
   flex-direction: column;  /* Les éléments enfants sont alignés en colonne */
-  min-height: 100px;  /* Hauteur minimale de la vue du navigateur */
+  min-height: 100vh;  /* Hauteur minimale de la vue du navigateur */
 }
 
 .container {
@@ -54,7 +54,7 @@ main {
   display: flex;  /* Utilise le modèle de boîte flexible pour le contenu principal */
   justify-content: center;  /* Centre les éléments enfants horizontalement */
   align-items: center;  /* Centre les éléments enfants verticalement */
-  height: 100px;   /* Hauteur de la vue du navigateur pour le contenu principal */
+  height: 100vh;   /* Hauteur de la vue du navigateur pour le contenu principal */
 }
 
 /* Styles de la boîte */
@@ -72,6 +72,7 @@ main {
 
 /* Styles d'image */
 img {
+
   height: 150px;  /* Hauteur fixe de l'image à 150 pixels */
   width: 200px;  /* Largeur fixe de l'image à 200 pixels */
   border-radius: 5px;  /* Bordure arrondie de l'image */
