@@ -128,10 +128,6 @@ footer {
 
 /* Styles spécifiques de la boîte dans le pied de page */
 .article-box {
-  flex-direction: row;  /* Les éléments enfants sont alignés en ligne */
-}
-
-.article-box {
   float: left;  /* Flotte à gauche pour créer une disposition en grille */
   width: 33.33%;  /* Largeur de chaque boîte à 33.33% de la largeur parente */
   margin-right: 20px;  /* Marge à droite pour les boîtes */
